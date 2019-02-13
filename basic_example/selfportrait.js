@@ -14,6 +14,7 @@ function setup() {
 }
 
 function draw() {
+    //canvas + head
     background('#F0FFFF');
     noStroke()
     translate(width/2, height/2);
@@ -52,6 +53,7 @@ function draw() {
     arc(-32, 0, 80, 80, PI+.9, -.9);
     line(130, -70, 230, -83);
 
+    //nose + mouth
     stroke('#CD853F');
     strokeWeight(3);
     noFill();
