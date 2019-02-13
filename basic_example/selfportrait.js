@@ -60,6 +60,7 @@ function draw() {
     line(0, 30, 10, 50);
     line(10, 50, 0, 50);
     line(-30, 100, 3, 100);
+    line(-15, 105, -11, 105);
 
 
   for (var i = -4; i < width; i++){
