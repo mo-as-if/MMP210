@@ -20,7 +20,7 @@ function draw() {
     background(col);
     noStroke();
     translate(width/2, height/2);
-    // rotate(frameCount / 1000);
+    rotate(frameCount / 1000);
     fill('#A36840');
     ellipse(0,0,300,350);
 
