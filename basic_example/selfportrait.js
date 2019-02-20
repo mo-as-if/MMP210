@@ -1,5 +1,4 @@
-var r1 = 0;
-var r2 = 0;
+
 var col = 0;
 var hat = 255;
 
@@ -21,7 +20,7 @@ function draw() {
     background(col);
     noStroke();
     translate(width/2, height/2);
-    rotate(frameCount / 1000);
+    // rotate(frameCount / 1000);
     fill('#A36840');
     ellipse(0,0,300,350);
 
@@ -84,7 +83,6 @@ function draw() {
     noFill();
     arc(32, 0, 80, 80, PI+.9, -.9);
     arc(-32, 0, 80, 80, PI+.9, -.9);
-
     pop();
 
     //nose + mouth
