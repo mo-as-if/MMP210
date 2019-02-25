@@ -20,7 +20,7 @@ function draw() {
     background(col);
     noStroke();
     translate(width/2, height/2);
-    rotate(frameCount / 1000);
+    rotate(frameCount / 250);
     fill('#A36840');
     ellipse(0,0,300,350);
 
@@ -58,18 +58,19 @@ function draw() {
 
     //earrings
     push();
-    fill(0)
+    fill(hat);
     ellipse(156, 16, 10, 10);
     ellipse(-156, 16, 10, 10);
     pop();
 
-    //pupil
+    //pupil left
     push();
     fill(0);
     ellipse(map(mouseX, 0, width, -10, -5) -20, 10, 10, 13);
     // ellipse(-25,10,10,13);
     pop();
 
+    //pupil right
     push();
     fill(0);
     ellipse(map(mouseX, 0, width, 45, 50) -20, 10, 10, 13);
