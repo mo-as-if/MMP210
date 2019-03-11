@@ -25,11 +25,11 @@ function draw() {
 // constrain box
   mx = constrain(mx, inner, width - inner);
   my = constrain(my, inner, height - inner);
-  col = map(mouseX, 0, 700, 255, 0);
+  col = map(mouseX, 0, 720, 255, 0);
   fill(col);
   rect(edge, edge, width-edge, height-edge);
   fill(237,34,93);
-  ellipse(mx, my, map(mouseX, 0, 700, radius, radius * 2));
+  ellipse(mx, my, map(mouseX, 0, 720, radius, radius * .25));
 
 // pressed line
   stroke(255);
