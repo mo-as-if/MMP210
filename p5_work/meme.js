@@ -13,7 +13,7 @@ function setup() {
 }
 
 function draw() {
-  background(230); 
+  background(230);
 
   if (abs(mouseX - mx) > 0.1) {
     mx = mx + (mouseX - mx) * easing;
@@ -22,11 +22,19 @@ function draw() {
     my = my + (mouseY- my) * easing;
   }
 
+// constrain box
   mx = constrain(mx, inner, width - inner);
   my = constrain(my, inner, height - inner);
   col = map(mouseX, 0, 700, 255, 0);
   fill(col);
   rect(edge, edge, width-edge, height-edge);
-  fill(255);
-  ellipse(mx, my, radius, radius);
+  fill(237,34,93);
+  ellipse(mx, my, map(mouseX, 0, 700, radius, radius * 2));
+
+// pressed line
+  stroke(255);
+  if (mouseIsPressed === true) {
+    line(mouseX, mouseY, pmouseX, pmouseY);
+}
+
 }
