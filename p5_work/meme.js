@@ -13,7 +13,7 @@ function setup() {
 }
 
 function draw() {
-  background(230);
+  background(180);
 
   if (abs(mouseX - mx) > 0.1) {
     mx = mx + (mouseX - mx) * easing;
