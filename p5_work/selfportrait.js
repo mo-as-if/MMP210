@@ -1,4 +1,3 @@
-
 var col = 0;
 var hat = 255;
 
